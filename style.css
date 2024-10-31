@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 /* Body background and base styling */
@@ -12,6 +11,7 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
 /* Header styling */
@@ -31,6 +31,7 @@ nav {
     justify-content: center;
     gap: 15px;
     margin-top: 15px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 nav a {
@@ -76,7 +77,7 @@ button, input[type="text"], textarea {
     background-color: #f8bbd0;
     color: #333;
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; /* Adjust max-width for mobile */
     transition: background-color 0.3s ease;
 }
 
@@ -136,4 +137,31 @@ button {
 
 #additionalInformation li {
     margin: 10px 0;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em; /* Adjust header size for smaller screens */
+    }
+
+    nav {
+        flex-direction: column; /* Stack the menu vertically */
+    }
+
+    nav a {
+        width: 90%; /* Make links wider on mobile */
+    }
+
+    section {
+        padding: 15px; /* Reduce padding for sections */
+    }
+
+    button, input[type="text"], textarea {
+        max-width: 90%; /* Make buttons and inputs wider */
+    }
+
+    #safetyTips, #alerts, .contact {
+        font-size: 1em; /* Adjust font size for alerts and tips */
+    }
 }
