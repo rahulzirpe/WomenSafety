@@ -1,0 +1,139 @@
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body background and base styling */
+body {
+    background-color: #ffe5ec;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #c2185b;
+    font-size: 2.5em;
+}
+
+/* Navigation menu styling */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+nav a {
+    background-color: #f8bbd0;
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #ec407a;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Section styling */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fce4ec;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #c2185b;
+    margin-bottom: 15px;
+}
+
+/* Buttons and Inputs styling */
+button, input[type="text"], textarea {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 20px;
+    border: 1px solid #ec407a;
+    background-color: #f8bbd0;
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="text"]:focus, textarea:focus {
+    background-color: #ec407a;
+    color: white;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Tips and Alerts styling */
+#safetyTips, #alerts {
+    font-size: 1.1em;
+    color: #d81b60;
+    padding: 10px;
+    background-color: #fce4ec;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #f8bbd0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    background-color: #ec407a;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #ad1457;
+}
+
+/* Additional Information styling */
+#additionalInformation ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+#additionalInformation li {
+    margin: 10px 0;
+}
